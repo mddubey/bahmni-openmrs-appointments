@@ -1,0 +1,9 @@
+!node_modules/
+node_modules/*
+!node_modules/bahmniapps-commons/
+node_modules/bahmniapps-commons/angular
+dist/
+!lib/angular-workers/dist
+.idea/
+.DS_Store
+*.iml

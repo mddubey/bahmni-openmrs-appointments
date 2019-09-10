@@ -1,6 +1,6 @@
 'use strict';
 
-var Bahmni = Bahmni || {};
+window.Bahmni = window.Bahmni || {};
 Bahmni.Appointments = Bahmni.Appointments || {};
 
 Bahmni.Appointments.Constants = (function () {
