@@ -11,7 +11,7 @@ Bahmni.Common = Bahmni.Common || {};
     var BAHMNI_CORE = RESTWS_V1 + "/bahmnicore";
     var EMRAPI = RESTWS + "/emrapi";
     var BACTERIOLOGY = RESTWS_V1;
-    var BASE_URL = hostUrl + "/openmrs/owa/appointments/config/";
+    var BASE_URL = hostUrl + "/bahmni_config/openmrs/apps/";
     var CUSTOM_URL = hostUrl + "/implementation_config/openmrs/apps/";
 
     var serverErrorMessages = [
