@@ -44,8 +44,6 @@ require("angular-elastic/elastic");
 require("angular-ivh-treeview")
 require("./lib/angular-workers/dist/angular-workers");
 
-
-//TODO-Temp all ../common to be replaced by bahmniapp-commons
 require("./common-constants");
 require("./route-errorhandler");
 
