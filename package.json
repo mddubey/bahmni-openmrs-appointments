@@ -42,7 +42,7 @@
         "select2": "github:select2/select2#3.4.8",
         "stacktrace-js": "0.6.4",
         "zeroclipboard": "2.1.6",
-        "bahmniapps-commons": "0.0.1-beta.5",
+        "bahmniapps-commons": "0.0.1-beta.6",
         "jquery": "1.9.1",
         "ng-dialog": "0.3.12",
         "angular-ivh-treeview": "^1.1.0",
