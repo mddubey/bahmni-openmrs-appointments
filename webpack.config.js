@@ -58,9 +58,10 @@ module.exports = {
     },
     plugins: [
         new webpack.ProvidePlugin({
-            //jQuery needs to be exported as window.jQuery instead of just jQuery because that's what angular looks for
+            //jQuery needs to be exported as window.jQuery along with jQuery because that's what angular looks for
             //https://stackoverflow.com/questions/36065931/webpack-how-to-make-angular-auto-detect-jquery-and-use-it-as-angular-element-in
             'window.jQuery': path.join(__dirname, 'node_modules', 'jquery/jquery'),
+            'jQuery': path.join(__dirname, 'node_modules', 'jquery/jquery'),
             'angular': path.join(__dirname, 'node_modules', 'angular'),
             'ZeroClipboard': path.join(__dirname, 'node_modules', 'ZeroClipboard'),
             'moment': path.join(__dirname, 'node_modules', 'moment/min/moment-with-locales')
