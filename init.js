@@ -20,7 +20,7 @@ require("ng-tags-input/build/ng-tags-input.min.css");
 require("lodash");
 require("./lib/jquery/jquery-ui-1.10.4.custom.min.js")
 require("./lib/jquery/jquery.cookie.custom");
-require("./lib/modernizr.custom.80690.js");
+// require("./lib/modernizr.custom.80690.js"); will come from bahmni-util-coomons
 require("ng-tags-input");
 
 
@@ -55,6 +55,7 @@ require("bahmniapps-commons/dist/bahmni-models-commons");
 require("bahmniapps-commons/dist/bahmni-patient-commons");``
 require("bahmniapps-commons/dist/ui-helper");
 require("bahmniapps-commons/dist/bahmni-domain-commons");
+require("bahmniapps-commons/dist/bahmni-conceptset-commons");
 require("bahmniapps-commons/dist/bahmni-patientsearch-commons");
 require("bahmniapps-commons/dist/bahmni-logging-commons");
 require("bahmniapps-commons/dist/displaycontrols");

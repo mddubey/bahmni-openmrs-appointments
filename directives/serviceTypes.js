@@ -33,7 +33,8 @@ angular.module('bahmni.appointments')
 
             var openConfirmationDialog = function (serviceType) {
                 ngDialog.openConfirm({
-                    template: 'views/admin/serviceTypeDeleteConfirmation.html',
+                    plain: true,
+                    template: require('../views/admin/serviceTypeDeleteConfirmation.html'),
                     scope: $scope,
                     data: {serviceType: serviceType},
                     closeByEscape: true

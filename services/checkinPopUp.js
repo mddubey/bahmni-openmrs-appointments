@@ -11,7 +11,8 @@ angular.module('bahmni.common.uiHelper')
                 scope.$destroy();
             };
             dialog = ngDialog.open({
-                template: '../appointments/views/checkInPopUp.html',
+                plain:true,
+                template: require('../views/checkInPopUp.html'),
                 scope: scope,
                 className: config.className || 'ngdialog-theme-default'
             });

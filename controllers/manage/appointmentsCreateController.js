@@ -419,7 +419,8 @@ angular.module('bahmni.appointments')
 
             $scope.displayConfirmationDialog = function () {
                 ngDialog.openConfirm({
-                    template: 'views/admin/appointmentServiceNavigationConfirmation.html',
+                    plain: true,
+                    template: require('../../views/admin/appointmentServiceNavigationConfirmation.html'),
                     scope: $scope,
                     closeByEscape: true
                 });
@@ -427,7 +428,8 @@ angular.module('bahmni.appointments')
 
             $scope.displayConflictConfirmationDialog = function () {
                 ngDialog.openConfirm({
-                    template: 'views/manage/appointmentConflictConfirmation.html',
+                    plain: true,
+                    template: require('../../views/manage/appointmentConflictConfirmation.html'),
                     scope: $scope,
                     closeByEscape: true
                 });

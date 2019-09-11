@@ -118,7 +118,8 @@ angular.module('bahmni.appointments')
                 };
 
                 dialog = ngDialog.open({
-                    template: '../appointments/views/manage/calendar/popUp.html',
+                    plain:true,
+                    template: require('../views/manage/calendar/popUp.html'),
                     scope: popUpScope,
                     className: config.className || 'ngdialog-theme-default'
                 });
