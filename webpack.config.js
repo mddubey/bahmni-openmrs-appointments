@@ -14,6 +14,9 @@ module.exports = {
     resolve: {
         modules: ["node_modules"]
     },
+    externals: {
+        "jquery": "jQuery"
+    },
     module: {
         rules: [
             // Need to export angular and jQuery in window context
@@ -65,11 +68,6 @@ module.exports = {
             output: __dirname + '/dist',
             inject: 'head'
         }),
-        // TODO-Temp: Below is workaround for providing bahmni app config in OpenMRS env for now.
-
-        new CopyPlugin([
-            { from: path.join(__dirname, 'config'), to: path.join(distDirPath, 'config/appointments') },
-            // { from: path.join(__dirname, 'lib'), to: path.join(distDirPath, 'lib') }
-        ]),
+        new webpack.ContextReplacementPlugin(/\.\/locale$/, 'empty-module', false, /js$/)
     ]
 }
