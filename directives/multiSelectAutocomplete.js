@@ -42,6 +42,6 @@ angular.module('bahmni.appointments')
                 loadOnDownArrow: "=",
                 autoCompleteMinLength: "="
             },
-            templateUrl: "../appointments/views/manage/multiSelectAutocomplete.html"
+            template: require("../views/manage/multiSelectAutocomplete.html")
         };
     }]);

@@ -151,6 +151,6 @@ angular.module('bahmni.appointments')
                 disableMaxLoad: '='
             },
             link: link,
-            templateUrl: '../appointments/views/admin/appointmentServiceAvailability.html'
+            template: require("../views/admin/appointmentServiceAvailability.html")
         };
     }]);

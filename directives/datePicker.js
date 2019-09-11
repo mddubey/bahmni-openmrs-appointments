@@ -57,7 +57,7 @@ angular.module('bahmni.appointments')
                 onChange: "=",
                 lastValidDate: "="
             },
-            templateUrl: "../appointments/views/manage/datePicker.html",
+            template: require("../views/manage/datePicker.html"),
             controller: controller
         };
     });

@@ -73,7 +73,7 @@ angular.module('bahmni.appointments')
             scope: {
                 service: '='
             },
-            templateUrl: "../appointments/views/admin/serviceTypes.html",
+            template: require("../views/admin/serviceTypes.html"),
             controller: controller
         };
     }]);

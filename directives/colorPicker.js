@@ -8,7 +8,7 @@ angular.module('bahmni.appointments')
                 colors: "=",
                 selectedColor: '='
             },
-            templateUrl: "../appointments/views/admin/colorPicker.html",
+            template: require("../views/admin/colorPicker.html"),
             link: function (scope) {
                 scope.showTheColorPicker = function (event) {
                     scope.showColorPicker = !scope.showColorPicker;

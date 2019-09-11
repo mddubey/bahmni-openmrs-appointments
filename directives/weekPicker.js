@@ -47,7 +47,7 @@ angular.module('bahmni.appointments')
                 onChange: "=",
                 weekStart: "=?"
             },
-            templateUrl: "../appointments/views/manage/weekPicker.html",
+            template: require("../views/manage/weekPicker.html"),
             controller: controller
         };
     });

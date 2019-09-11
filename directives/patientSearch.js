@@ -7,7 +7,7 @@ angular.module('bahmni.appointments')
             scope: {
                 onSearch: "="
             },
-            templateUrl: "../appointments/views/manage/patientSearch.html",
+            template: require("../views/manage/patientSearch.html"),
             link: {
                 pre: function ($scope) {
                     $scope.search = function () {

@@ -9,6 +9,6 @@ angular.module('bahmni.appointments')
                 appointments: "=",
                 date: "="
             },
-            templateUrl: "../appointments/views/manage/calendar/dayCalendar.html"
+            template: require("../views/manage/calendar/dayCalendar.html")
         };
     }]);
