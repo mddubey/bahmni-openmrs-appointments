@@ -3,6 +3,10 @@
 window.Bahmni = window.Bahmni || {};
 Bahmni.Appointments = Bahmni.Appointments || {};
 
+// A hacky fix for https://github.com/angular-ui/ui-calendar/issues/267#issuecomment-158618317
+// angular should work with jQuery as selector but it fallsback on jQlite. We force it to use jQuery here.
+angular.element = jQuery;
+
 require("./lib/jquery/jquery-ui-1.10.4.custom.min.css");
 require("ng-dialog/css/ngDialog.min.css");
 require("ng-dialog/css/ngDialog-theme-default.min.css");
