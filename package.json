@@ -43,7 +43,7 @@
         "stacktrace-js": "0.6.4",
         "zeroclipboard": "2.1.6",
         "bahmniapps-commons": "0.0.1-beta.6",
-        "jquery": "1.9.1",
+        "jquery": "3.5.0",
         "ng-dialog": "0.3.12",
         "angular-ivh-treeview": "^1.1.0",
         "ng-tags-input": "^3.1.1",
